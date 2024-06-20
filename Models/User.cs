@@ -13,8 +13,13 @@ public class User
         Profession = profession;
         Profile = profile;
         CareerObjectives = careerObjectives;
-        Contacts = new Contacts(phoneNumber, email, address);
-        Facts = new Facts(happyClients, workingHours, awardsWon, coffeeConsumed);
+        PhoneNumber = phoneNumber;
+        Email = email;
+        Address = address;
+        HappyClients = happyClients;
+        WorkingHours = workingHours;
+        AwardsWon = awardsWon;
+        CoffeeConsumed = coffeeConsumed;
     }
 
     public int Id { get; set; }
@@ -24,35 +29,21 @@ public class User
     public string Profession { get; set; }
     public string Profile { get; set; }
     public string CareerObjectives { get; set; }
-    public Contacts Contacts { get; set; }
-    public Facts Facts { get; set; }
 
-    public List<SocialMedia> SocialMedias { get; set; } = [];
-    public List<Profession> Professions { get; set; } = [];
-    public List<Testimonial> Testimonials { get; set; } = [];
-    public List<Client> Clients { get; set; } = [];
-    public List<Education> Educations { get; set; } = [];
-    public List<Experience> Experiences { get; set; } = [];
-    public List<Certificate> Certificates { get; set; } = [];
-    public List<Project> Projects { get; set; } = [];
-}
+    public string PhoneNumber { get; set; }
+    public string Email { get; set; }
+    public string Address { get; set; }
+    public int HappyClients { get; set; }
+    public int WorkingHours { get; set; }
+    public int AwardsWon { get; set; }
+    public int CoffeeConsumed { get; set; }
 
-public class Contacts(string phoneNumber, string email, string address)
-{
-    public string PhoneNumber { get; set; } = phoneNumber;
-    public string Email { get; set; } = email;
-    public string Address { get; set; } = address;
-}
-
-public class Facts(
-    int happyClients,
-    int workingHours,
-    int awardsWon,
-    int coffeeConsumed
-)
-{
-    public int HappyClients { get; set; } = happyClients;
-    public int WorkingHours { get; set; } = workingHours;
-    public int AwardsWon { get; set; } = awardsWon;
-    public int CoffeeConsumed { get; set; } = coffeeConsumed;
+    public List<int> SocialMediasIds { get; set; } = [];
+    public List<int> ProfessionsIds { get; set; } = [];
+    public List<int> TestimonialsIds { get; set; } = [];
+    public List<int> ClientsIds { get; set; } = [];
+    public List<int> EducationsIds { get; set; } = [];
+    public List<int> ExperiencesIds { get; set; } = [];
+    public List<int> CertificatesIds { get; set; } = [];
+    public List<int> ProjectsIds { get; set; } = [];
 }
