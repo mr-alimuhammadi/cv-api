@@ -69,6 +69,7 @@ public class UserController : ControllerBase
             user.WorkingHours = userPutDto.Facts.WorkingHours;
             user.AwardsWon = userPutDto.Facts.AwardsWon;
             user.CoffeeConsumed = userPutDto.Facts.CoffeeConsumed;
+            user.Avatar = userPutDto.Avatar;
             _context.Save();
             return Ok(user.ToUserGetDto());
         }

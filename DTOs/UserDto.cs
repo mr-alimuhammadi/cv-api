@@ -3,6 +3,7 @@ namespace cv_api.DTOs;
 public class UserPostDto
 {
     public string FullName { get; set; } = string.Empty;
+    public string Avatar { get; set; } = string.Empty;
     public string Profession { get; set; } = string.Empty;
     public string Profile { get; set; } = string.Empty;
     public string CareerObjectives { get; set; } = string.Empty;
@@ -13,6 +14,8 @@ public class UserPostDto
 public class UserPutDto
 {
     public string FullName { get; set; } = string.Empty;
+    public string Avatar { get; set; } = string.Empty;
+
     public string Profession { get; set; } = string.Empty;
     public string Profile { get; set; } = string.Empty;
     public string CareerObjectives { get; set; } = string.Empty;
@@ -23,6 +26,7 @@ public class UserPutDto
 public class UserGetDto
 {
     public int Id { get; set; }
+    public string Avatar { get; set; } = string.Empty;
     public string FullName { get; set; } = string.Empty;
     public string Profession { get; set; } = string.Empty;
     public string Profile { get; set; } = string.Empty;

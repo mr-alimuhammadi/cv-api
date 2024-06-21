@@ -6,7 +6,7 @@ public class User
         string email, string address, int happyClients,
         int workingHours,
         int awardsWon,
-        int coffeeConsumed)
+        int coffeeConsumed, string avatar)
     {
         Id = id;
         FullName = fullName;
@@ -20,12 +20,14 @@ public class User
         WorkingHours = workingHours;
         AwardsWon = awardsWon;
         CoffeeConsumed = coffeeConsumed;
+        Avatar = avatar;
     }
 
     public int Id { get; set; }
 
     // public string Password { get; set; }
     public string FullName { get; set; }
+    public string Avatar { get; set; }
     public string Profession { get; set; }
     public string Profile { get; set; }
     public string CareerObjectives { get; set; }

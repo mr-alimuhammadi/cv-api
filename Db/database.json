@@ -1,11 +1,224 @@
 {
-  "Users": [],
-  "SocialMedias": [],
-  "Professions": [],
-  "Testimonials": [],
-  "Clients": [],
-  "Educations": [],
-  "Experiences": [],
-  "Certificates": [],
-  "Projects": []
+  "Users": [
+    {
+      "Id": 1,
+      "FullName": "John Doe",
+      "Avatar": "default.png",
+      "Profession": "Software Developer",
+      "Profile": "profile1.jpg",
+      "CareerObjectives": "To build amazing software",
+      "PhoneNumber": "123-456-7890",
+      "Email": "john@example.com",
+      "Address": "123 Main St",
+      "HappyClients": 10,
+      "WorkingHours": 1000,
+      "AwardsWon": 5,
+      "CoffeeConsumed": 100,
+      "SocialMediasIds": [
+        1
+      ],
+      "ProfessionsIds": [
+        1
+      ],
+      "TestimonialsIds": [
+        1
+      ],
+      "ClientsIds": [
+        1
+      ],
+      "EducationsIds": [
+        1
+      ],
+      "ExperiencesIds": [
+        1
+      ],
+      "CertificatesIds": [
+        1
+      ],
+      "ProjectsIds": [
+        1
+      ]
+    },
+    {
+      "Id": 2,
+      "FullName": "Jane Smith",
+      "Avatar": "default.png",
+      "Profession": "Data Scientist",
+      "Profile": "profile2.jpg",
+      "CareerObjectives": "To analyze and interpret data",
+      "PhoneNumber": "987-654-3210",
+      "Email": "jane@example.com",
+      "Address": "456 Elm St",
+      "HappyClients": 15,
+      "WorkingHours": 2000,
+      "AwardsWon": 10,
+      "CoffeeConsumed": 200,
+      "SocialMediasIds": [
+        2
+      ],
+      "ProfessionsIds": [
+        2
+      ],
+      "TestimonialsIds": [
+        2
+      ],
+      "ClientsIds": [
+        2
+      ],
+      "EducationsIds": [
+        2
+      ],
+      "ExperiencesIds": [
+        2
+      ],
+      "CertificatesIds": [
+        2
+      ],
+      "ProjectsIds": [
+        2
+      ]
+    }
+  ],
+  "SocialMedias": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "Platform": "LinkedIn",
+      "Link": "https://linkedin.com/johndoe",
+      "Icon": "linkedin-icon.png"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "Platform": "Twitter",
+      "Link": "https://twitter.com/janesmith",
+      "Icon": "twitter-icon.png"
+    }
+  ],
+  "Professions": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "Title": "Developer",
+      "Details": "Developing amazing applications",
+      "Icon": "developer-icon.png"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "Title": "Scientist",
+      "Details": "Analyzing data",
+      "Icon": "scientist-icon.png"
+    }
+  ],
+  "Testimonials": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "ClientName": "Client A",
+      "ClientJob": "Manager",
+      "ClientImage": "clientA.jpg",
+      "Comment": "Great job!"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "ClientName": "Client B",
+      "ClientJob": "CEO",
+      "ClientImage": "clientB.jpg",
+      "Comment": "Excellent work!"
+    }
+  ],
+  "Clients": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "Name": "Client A",
+      "Avatar": "clientA.jpg"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "Name": "Client B",
+      "Avatar": "clientB.jpg"
+    }
+  ],
+  "Educations": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "EndYear": 2010,
+      "Major": "Computer Science",
+      "School": "University A",
+      "Details": "Details about University A"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "EndYear": 2012,
+      "Major": "Data Science",
+      "School": "University B",
+      "Details": "Details about University B"
+    }
+  ],
+  "Experiences": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "FromYear": 2015,
+      "ToYear": 2020,
+      "Job": "Developer",
+      "Company": "Company A",
+      "Details": "Developed applications"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "FromYear": 2013,
+      "ToYear": 2018,
+      "Job": "Scientist",
+      "Company": "Company B",
+      "Details": "Analyzed data"
+    }
+  ],
+  "Certificates": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "Course": "Course A",
+      "Code": "Code A",
+      "Date": "2020-01-01T00:00:00",
+      "Image": "certificateA.jpg"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "Course": "Course B",
+      "Code": "Code B",
+      "Date": "2021-01-01T00:00:00",
+      "Image": "certificateB.jpg"
+    }
+  ],
+  "Projects": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "Name": "Project A",
+      "FromYear": 2019,
+      "ToYear": 2020,
+      "Details": "Details about Project A",
+      "Image": "projectA.jpg",
+      "Link": "https://linktoA.com"
+    },
+    {
+      "Id": 2,
+      "UserId": 2,
+      "Name": "Project B",
+      "FromYear": 2020,
+      "ToYear": 2021,
+      "Details": "Details about Project B",
+      "Image": "projectB.jpg",
+      "Link": "https://linktoB.com"
+    }
+  ]
 }

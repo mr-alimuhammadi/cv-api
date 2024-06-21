@@ -10,6 +10,7 @@ public static class UserMapper
         return new UserPostDto
         {
             FullName = user.FullName,
+            Avatar = user.Avatar,
             Profession = user.Profession,
             Profile = user.Profile,
             CareerObjectives = user.CareerObjectives,
@@ -34,6 +35,7 @@ public static class UserMapper
         return new UserPutDto
         {
             FullName = user.FullName,
+            Avatar = user.Avatar,
             Profession = user.Profession,
             Profile = user.Profile,
             CareerObjectives = user.CareerObjectives,
@@ -59,6 +61,7 @@ public static class UserMapper
         {
             Id = user.Id,
             FullName = user.FullName,
+            Avatar = user.Avatar,
             Profession = user.Profession,
             Profile = user.Profile,
             CareerObjectives = user.CareerObjectives,
@@ -100,7 +103,8 @@ public static class UserMapper
             userPostDto.Facts.HappyClients,
             userPostDto.Facts.WorkingHours,
             userPostDto.Facts.AwardsWon,
-            userPostDto.Facts.CoffeeConsumed
+            userPostDto.Facts.CoffeeConsumed,
+            userPostDto.Avatar
         );
     }
 }

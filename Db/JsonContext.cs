@@ -51,7 +51,7 @@ public class JsonContext
         Db.Users = new List<User>
         {
             new(1, "John Doe", "Software Developer", "profile1.jpg", "To build amazing software", "123-456-7890",
-                "john@example.com", "123 Main St", 10, 1000, 5, 100)
+                "john@example.com", "123 Main St", 10, 1000, 5, 100, "default.png")
             {
                 SocialMediasIds = [1],
                 CertificatesIds = [1],
@@ -63,7 +63,7 @@ public class JsonContext
                 TestimonialsIds = [1]
             },
             new(2, "Jane Smith", "Data Scientist", "profile2.jpg", "To analyze and interpret data", "987-654-3210",
-                "jane@example.com", "456 Elm St", 15, 2000, 10, 200)
+                "jane@example.com", "456 Elm St", 15, 2000, 10, 200, "default.png")
             {
                 SocialMediasIds = [2],
                 CertificatesIds = [2],
